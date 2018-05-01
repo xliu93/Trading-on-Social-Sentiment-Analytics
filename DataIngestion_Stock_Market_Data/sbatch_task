@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=24:00:00
+#SBATCH --mem=1GB
+#SBATCH --job-name=xliuStockDataDump
+#SBATCH --mail-type=END
+#SBATCH --mail-user=xialiang.liu@nyu.edu
+#SBATCH --output=/scratch/xl2053/stock_dataset/logs/batch-%j.log
+
+RUNDIR=/scratch/xl2053/stock_dataset/code
+cd $RUNDIR
+
+python dump_stock_market_data.py
