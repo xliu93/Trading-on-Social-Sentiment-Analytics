@@ -1,12 +1,6 @@
 ### Investment Assistant Based on Social Sentiment Analytics
 
-CSCI-GA 3033-005 Big Data Application Development - Course Project
-
 May 2018
-
-- Author:
-	- Xialiang Liu (xl2053@nyu.edu)
-	- Dailing Zhu (dz1104@nyu.edu)
 
 ---
 ### I. Application Intro
