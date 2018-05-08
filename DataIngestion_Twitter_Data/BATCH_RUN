@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NOW=$(date +"%Y-%m-%d-%H:%M:%S")
+LOGFILE=logs/batch-$NOW.log
+
+while read USER; do
+	python Exporter.py --username "$USER" --since 2010-01-01 --until 2018-04-01 > logs/$USER.log
+	mv output_got.csv output/output_$USER.csv
+	echo "output_$USER.csv moved to output directory." >>$LOGFILE
+done <$1
+
+ls -l ./output/ | mail -s "Batch Job Done! Check $LOGFILE" xialiang.liu@nyu.edu 
