@@ -7,7 +7,7 @@ With the work of Jefferson-Henrique, we collected tweets from selected users and
 
 ### Acknowledgement: 
 
-Using package: [**GetOldTweets-python**] (https://github.com/Jefferson-Henrique/GetOldTweets-python) 
+Using package: [**GetOldTweets-python**](https://github.com/Jefferson-Henrique/GetOldTweets-python) 
 by Jefferson Henrique - 
 A project written in Python to get old tweets, it bypass some limitations of Twitter Official API.
 
