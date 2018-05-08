@@ -3,7 +3,7 @@
 # Project: Investment Assistant Based on News Feed Analytics
 #
 # Author: Xialiang Liu
-# E-mail: xialiang.liu@hotmail.com
+# E-mail: xialiang.liu@nyu.edu
 ##############################################################
 
 
