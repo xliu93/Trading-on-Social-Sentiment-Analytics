@@ -1,7 +1,0 @@
-val reuterRdd = sc.textFile("/user/dz1104/bdad-project/reuters.csv")
-val reuterRdd1 = reuterRdd.map(line => line.split("\t", -1))
-val reuterRdd2 = reuterRdd1.filter(array => array.length == 4)
-val reuterRdd3 = reuterRdd2.map(array => (array(1), array(2))
-val reuterRdd4 = reuterRdd3.filter(pair => pair._1 != "" && pair._1.length > 8 && pair._2 != "")
-val reuterRdd5 = reuterRdd4.map(pair => (pair._1.substring(1, 9), pair._2.substring(1, pair._2.length-1)))
-val sortedReuter = reuterRdd5.groupByKey().sortByKey()
